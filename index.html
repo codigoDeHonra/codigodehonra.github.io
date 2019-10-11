@@ -3,6 +3,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <style>
       body {
         font-family: 'Fira Code', monospace;
@@ -19,43 +20,64 @@
       .row {
         height: 100%;
       }
+    .nav-item {
+      font-size: 18pt;
+    }
+    a.nav-link{
+      color: white;
+    }
+    .list-group-item-action {
+      color: white;
+    }
+    .list-group-item-action:hover {
+      background-color: rgb(50,50,50);
+      color: white;
+    }
+    .shadow-sm {
+      box-shadow: 0 .125rem .25rem rgba(255,255,255,.175) !important;
+    }
     </style>
   </head>
 <body>
   <main class="container">
     <div class="row align-items-center justify-content-center">
       <div class="col-sm-12 col-xl-5">
-        <div class="card">
+        <div class="card heartBeat shadow-sm p-3 mb-3 rounded">
            <div class="card-body">
             <h3 class="text-center">CodigoDeHonra.tech</h3>
             <p class="card-text text-center">Wouerner Brandão</p>
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="https://github.com/wouerner">
-                  <i class="fab fa-github"></i>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="https://gitlab.com/wouerner">
-                  <i class="fab fa-gitlab"></i> 
-                </a>
-              </li>
-              <li class="nav-item">
-                <a  class="nav-link" href="https://www.linkedin.com/in/wouerner/">
-                  <i class="fab fa-linkedin-in"></i> 
-                </a>
-              </li>
-            </ul>
+            <div class="d-md-flex d-block flex-row mx-md-auto mx-0 ">
+              <ul class="nav nav-bar mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/wouerner">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://gitlab.com/wouerner">
+                    <i class="fab fa-gitlab"></i> 
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a  class="nav-link" href="https://www.linkedin.com/in/wouerner/">
+                    <i class="fab fa-linkedin-in"></i> 
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">
+            <li class="list-group-item list-group-item-action">
               <i class="fas fa-building"></i> 32.944.459/0001-30
             </li>
-            <li class="list-group-item">
+            <li class="list-group-item list-group-item-action">
+              <i class="fas fa-envelope-square"></i> wouerner@codigodehonra.tech 
+            </li>
+            <li class="list-group-item list-group-item-action">
               <i class="fab fa-telegram-plane"></i> @wouerner
             </li>
-            <li class="list-group-item">
-              <i class="fas fa-phone-alt"></i> 61-99917-9736 (whatsapp)
+            <li class="list-group-item list-group-item-action ">
+              <i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> 61-99917-9736 (whatsapp)
             </li>
           </ul>
         </div>
