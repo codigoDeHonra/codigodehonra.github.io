@@ -6,295 +6,333 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js" integrity="sha256-399DNRyfIpWIy1ZV0KmEIIuIQ5sBHdLu9MBtVHrNtt8=" crossorigin="anonymous"></script>
+    <script>
+      new WOW().init();
+    </script>
     <style>
+/*:root {
+  --bg: 1f2041;
+  --bg-secondary: 6b666a;
+  --font-color: #e1e2e6;
+  --primary: #27a3c1;
+  --secondary: #e1e2e6;
+  --font-family: 'Press Start 2P', cursive;
+}*/
+
+:root {
+  --bg: #14213d;
+  --bg-secondary: #0b2545;
+  --font-color: #e1e2e6;
+  --primary: #134074;
+  --secondary: #e1e2e6;
+  --font-family: 'Press Start 2P', cursive;
+  --card-bg: #13315c;
+}
       body {
         font-family: 'Fira Code', monospace;
         color: white;
-        background: rgb(33,33,33);
-        background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(29,29,29,1) 50%, rgba(0,0,0,1) 100%);
+        background-color: var(--bg);
+        /*background: linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(29,29,29,1) 50%, rgba(0,0,0,1) 100%);*/
+      }
+      .header{
+        background-color: var(--bg-secondary);
+      }
+      nav#nav{
+        background-color: var(--primary);
       }
       .container-fluid{
         margin-top: 58px;
       }
       .card {
-        background: rgb(33,33,33);
+        background:var(--card-bg);
       }
       .list-group-item {
-        background: rgb(33,33,33);
+        background: transparent;
       }
       .row-height{
         height: 100%;
       }
-    .nav-item {
-      font-size: 18pt;
-    }
-    a.nav-link{
-      color: white;
-    }
-    .list-group-item-action {
-      color: white;
-    }
-    .list-group-item-action:hover {
-      background-color: rgb(50,50,50);
-      color: white;
-    }
-    .shadow-sm {
-      box-shadow: 0 .125rem .25rem rgba(255,255,255,.175) !important;
-    }
-    h1 {
-      font-size: 22pt;
-      color: #14ffec;
-      text-shadow: 0px 2px 3px #555;
-    }
-    h2 {
-      font-size: 18pt;
-      color: #14ffec;
-      text-shadow: 0px 2px 3px #555;
-    }
-    .font-press{
-      font-family: 'Press Start 2P', cursive;
-    }
+      .nav-item {
+        font-size: 18pt;
+      }
+      .list-group-item-action {
+        color: var(--font-color);
+      }
+      .list-group-item-action:hover {
+        color: var(--primary);
+      }
+      .shadow-sm {
+        box-shadow: 0 .125rem .25rem rgba(255,255,255,.175) !important;
+      }
+      a{
+        color: var(--font-color);
+      }
+      h1 {
+        font-size: 22pt;
+        color: var(--font-color);
+        text-shadow: 0px 2px 3px #555;
+        font-family: 'Press Start 2P', cursive;
+      }
+      h2 {
+        font-size: 18pt;
+        color: var(--font-color);
+        text-shadow: 0px 2px 3px #555;
+        font-family: 'Press Start 2P', cursive;
+      }
+      h5,h3 {
+        color: var(--font-color);
+        font-family: 'Press Start 2P', cursive;
+      }
+      .main {
+        background-color: var(--bg-secondary);
+      }
+      .font-press{
+        font-family: 'Press Start 2P', cursive;
+      }
+      footer{
+        background-color: var(--primary);
+      }
     </style>
   </head>
-<body>
-  <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand font-press" href="#">CDH.Tech</a>
+  <body>
+
+    <nav id="nav" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand font-press" href="#home">CDH.Tech</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="#equipe">Equipe</a>
+              <a class="nav-link font-press" href="#equipe">Equipe</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item font-press">
               <a class="nav-link" href="#contato">Contato</a>
             </li>
           </ul>
         </div>
-    </div>
-      </nav>
-
-
-  </header>
-
-  <nav class="container-fluid" style="background-color: #212121; ">
-  <div class="container" >
-    <div class="row align-items-center justify-content-center" style="padding-top: 15px;min-height:200px">
-      <div class="col-6" style="">
-        <a name="home"> <h1 class="font-press ">Código de Honra</h1></a>
-        <h2>Criação de Software</h2>
       </div>
-      <div class="col-6" style="">
-        <img src="assets/svg/001-algorithm.svg" />
-      </div>
-    </div>
-    </div>
-  </nav>
-  <section class="mt-4">
-    <div class="container">
-      <a name="principios"><h5 class="display-5"> Principios </h5></a>
-      <div class="row">
-        <div class="col">
-          <div class="card shadow-sm rounded pt-3">
-            <img class="card-img-top mx-auto" src="assets/svg/beach-chair.svg"  style="width:100px"/>
-            <div class="card-body">
-              <h6 class="card-title">Officeless</h6>
-              <p class="card-text">
-                 A cultura de trabalhar da melhor forma, quando e aonde for melhor para a tarefa. 
-              </p>
-            </div>
+    </nav>
+
+
+
+    <header class="container-fluid header">
+      <div class="container" >
+        <div class="row align-items-center justify-content-center" style="padding-top: 15px;min-height:200px">
+          <div class="col-6" style="">
+            <a name="home"> <h1 class="font-press ">CodigoDeHonra.Tech</h1></a>
+            <h2  class="font-press ">Criação de Software</h2>
           </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm rounded pt-3">
-            <img class="card-img-top mx-auto" src="assets/svg/transparency.svg"  style="width:100px"/>
-            <div class="card-body">
-              <h6 class="card-title">Transparencia</h6>
-              <p class="card-text">
-                 Não existem segredos entre nossa equipe e o projeto. 
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm rounded pt-3">
-            <img class="card-img-top mx-auto" src="assets/svg/lips.svg"  style="width:100px"/>
-            <div class="card-body">
-              <h6 class="card-title">Coisas Simples</h6>
-              <p class="card-text">
-                 Estamos aqui para facilicar o seu projeto, não para complicar! 
-              </p>
-              <a href="https://pt.wikipedia.org/wiki/Princ%C3%ADpio_KISS">KISS</a>
-            </div>
+          <div class="col-6" style="">
+            <img src="assets/svg/001-algorithm.svg" />
           </div>
         </div>
       </div>
-  </section>
+    </header>
 
-  <main class=" mt-4 container">
-    <a name="equipe"><h5 class="display-5"> Equipe </h5></a>
-    <div class="row ">
-      <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-        <div class="card heartBeat shadow-sm rounded">
-           <!--img class="card-img-top" src="cdh.png" alt="Card image cap"-->
-           <img class="card-img-top mx-auto img-fluid" src="assets/img/wouerner.png"/>
-           <div class="card-body">
-            <h3 class="text-center">Wouerner</h3>
-            <div class="d-md-flex d-block flex-row mx-sm-auto mx-md-auto mx-0 ">
-              <ul class="nav nav-bar mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/wouerner">
-                    <i class="fab fa-github"></i>
-                  </a>
+    <section class="wow heartBeat mt-4" data-wow-duration="2s" data-wow-delay="5s">
+      <div class="container">
+        <a name="principios"><h5 class="display-5"> Principios </h5></a>
+        <div class="row">
+          <div class="col">
+            <div class="card shadow-sm rounded pt-3">
+              <img class="card-img-top mx-auto" src="assets/svg/beach-chair.svg"  style="width:100px"/>
+              <div class="card-body">
+                <h6 class="card-title">Officeless</h6>
+                <p class="card-text">
+                  A cultura de trabalhar da melhor forma, quando e aonde for melhor para a tarefa. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm rounded pt-3">
+              <img class="card-img-top mx-auto" src="assets/svg/transparency.svg"  style="width:100px"/>
+              <div class="card-body">
+                <h6 class="card-title">Transparencia</h6>
+                <p class="card-text">
+                  Não existem segredos entre nossa equipe e o projeto. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm rounded pt-3">
+              <img class="card-img-top mx-auto" src="assets/svg/lips.svg"  style="width:100px"/>
+              <div class="card-body">
+                <h6 class="card-title">Coisas Simples</h6>
+                <p class="card-text">
+                  Estamos aqui para facilicar o seu projeto, não para complicar! 
+                </p>
+                <a href="https://pt.wikipedia.org/wiki/Princ%C3%ADpio_KISS">KISS</a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <main class=" pb-4 pt-4 container-fluid main">
+      <div class=" container">
+        <a name="equipe"><h5 class="display-5"> Equipe </h5></a>
+        <div class="row ">
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="card heartBeat shadow-sm rounded">
+              <!--img class="card-img-top" src="cdh.png" alt="Card image cap"-->
+              <img class="card-img-top mx-auto img-fluid" src="assets/img/wouerner.png"/>
+              <div class="card-body">
+                <h3 class="text-center">Wouerner</h3>
+                <div class="d-md-flex d-block flex-row mx-sm-auto mx-md-auto mx-0 ">
+                  <ul class="nav nav-bar mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://github.com/wouerner">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://gitlab.com/wouerner">
+                        <i class="fab fa-gitlab"></i> 
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a  class="nav-link" href="https://www.linkedin.com/in/wouerner/">
+                        <i class="fab fa-linkedin-in"></i> 
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action">
+                  <i class="fas fa-envelope-square"></i> wouerner@codigodehonra.tech 
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://gitlab.com/wouerner">
-                    <i class="fab fa-gitlab"></i> 
-                  </a>
+                <li class="list-group-item list-group-item-action">
+                  <i class="fab fa-telegram-plane"></i> @wouerner
                 </li>
-                <li class="nav-item">
-                  <a  class="nav-link" href="https://www.linkedin.com/in/wouerner/">
-                    <i class="fab fa-linkedin-in"></i> 
-                  </a>
+                <li class="list-group-item list-group-item-action ">
+                  <i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> 61-99917-9736 (whatsapp)
                 </li>
               </ul>
             </div>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item list-group-item-action">
-              <i class="fas fa-envelope-square"></i> wouerner@codigodehonra.tech 
-            </li>
-            <li class="list-group-item list-group-item-action">
-              <i class="fab fa-telegram-plane"></i> @wouerner
-            </li>
-            <li class="list-group-item list-group-item-action ">
-              <i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> 61-99917-9736 (whatsapp)
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-        <div class="card heartBeat shadow-sm rounded">
-           <!--img class="card-img-top" src="cdh.png" alt="Card image cap"-->
-           <div class="card-body">
-            <h3 class="text-center">Teste1</h3>
-            <div class="d-md-flex d-block flex-row mx-sm-auto mx-md-auto mx-0 ">
-              <ul class="nav nav-bar mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com">
-                    <i class="fab fa-github"></i>
-                  </a>
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="card heartBeat shadow-sm rounded">
+              <!--img class="card-img-top" src="cdh.png" alt="Card image cap"-->
+              <div class="card-body">
+                <h3 class="text-center">Teste1</h3>
+                <div class="d-md-flex d-block flex-row mx-sm-auto mx-md-auto mx-0 ">
+                  <ul class="nav nav-bar mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://gitlab.com">
+                        <i class="fab fa-gitlab"></i> 
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a  class="nav-link" href="https://www.linkedin.com/in/">
+                        <i class="fab fa-linkedin-in"></i> 
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action">
+                  <i class="fas fa-envelope-square"></i> teste@codigodehonra.tech 
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://gitlab.com">
-                    <i class="fab fa-gitlab"></i> 
-                  </a>
+                <li class="list-group-item list-group-item-action">
+                  <i class="fab fa-telegram-plane"></i> @wwwww
                 </li>
-                <li class="nav-item">
-                  <a  class="nav-link" href="https://www.linkedin.com/in/">
-                    <i class="fab fa-linkedin-in"></i> 
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item list-group-item-action">
-              <i class="fas fa-envelope-square"></i> teste@codigodehonra.tech 
-            </li>
-            <li class="list-group-item list-group-item-action">
-              <i class="fab fa-telegram-plane"></i> @wwwww
-            </li>
-            <li class="list-group-item list-group-item-action ">
-              <i class="fas fa-phone-alt"></i> 
-              <i class="fab fa-whatsapp"></i> 61-1111-0000 (whatsapp)
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
-        <div class="card heartBeat shadow-sm rounded">
-           <!--img class="card-img-top" src="cdh.png" alt="Card image cap"-->
-           <div class="card-body">
-            <h3 class="text-center">Teste2</h3>
-            <div class="d-md-flex d-block flex-row mx-sm-auto mx-md-auto mx-0 ">
-              <ul class="nav nav-bar mx-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="https://github.com/">
-                    <i class="fab fa-github"></i>
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://gitlab.com/">
-                    <i class="fab fa-gitlab"></i> 
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a  class="nav-link" href="https://www.linkedin.com/in/">
-                    <i class="fab fa-linkedin-in"></i> 
-                  </a>
+                <li class="list-group-item list-group-item-action ">
+                  <i class="fas fa-phone-alt"></i> 
+                  <i class="fab fa-whatsapp"></i> 61-1111-0000 (whatsapp)
                 </li>
               </ul>
             </div>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item list-group-item-action">
-              <i class="fas fa-envelope-square"></i> 0000@codigodehonra.tech 
-            </li>
-            <li class="list-group-item list-group-item-action">
-              <i class="fab fa-telegram-plane"></i> @00000
-            </li>
-            <li class="list-group-item list-group-item-action ">
-              <i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> 61-0000-0000 (whatsapp)
-            </li>
-          </ul>
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="card heartBeat shadow-sm rounded">
+              <!--img class="card-img-top" src="cdh.png" alt="Card image cap"-->
+              <div class="card-body">
+                <h3 class="text-center">Teste2</h3>
+                <div class="d-md-flex d-block flex-row mx-sm-auto mx-md-auto mx-0 ">
+                  <ul class="nav nav-bar mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://github.com/">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://gitlab.com/">
+                        <i class="fab fa-gitlab"></i> 
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a  class="nav-link" href="https://www.linkedin.com/in/">
+                        <i class="fab fa-linkedin-in"></i> 
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-action">
+                  <i class="fas fa-envelope-square"></i> 0000@codigodehonra.tech 
+                </li>
+                <li class="list-group-item list-group-item-action">
+                  <i class="fab fa-telegram-plane"></i> @00000
+                </li>
+                <li class="list-group-item list-group-item-action ">
+                  <i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> 61-0000-0000 (whatsapp)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </main>
-  <section class="mt-4">
-    <div class="container">
-      <div class="typeform-widget" data-url="https://wouerner.typeform.com/to/nYjB9n" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=nYjB9n&utm_source=typeform.com-15153045-Free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
-    </div>
-  </section>
-  <!-- Footer -->
-<footer class="mt-4 page-footer font-small blue pt-4">
-  <div class="container-fluid text-center text-md-left">
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Content -->
-        <h5 class="text-uppercase">Contato</h5>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item list-group-item-action">
-              <i class="fas fa-envelope-square"></i> wouerner@codigodehonra.tech 
-            </li>
-            <li class="list-group-item list-group-item-action">
-              <i class="fab fa-telegram-plane"></i> @wouerner
-            </li>
-            <li class="list-group-item list-group-item-action ">
-              <i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> 61-99917-9736 (whatsapp)
-            </li>
-          </ul>
+    </main>
+    <section class="mt-4">
+      <div class="container">
+        <div class="typeform-widget" data-url="https://wouerner.typeform.com/to/nYjB9n" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=nYjB9n&utm_source=typeform.com-15153045-Free&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=EN" style="color: #999" target="_blank">Typeform</a> </div>
       </div>
-      <!-- Grid column -->
+    </section>
+    <!-- Footer -->
+    <footer class="wow pt-4 page-footer font-small pt-4">
+      <div class="container-fluid text-center text-md-left">
+        <div class="row">
 
-      <hr class="clearfix w-100 d-md-none pb-3">
-      <div class="col-md-3 mb-md-0 mb-3">
+          <!-- Grid column -->
+          <div class="col-md-3 mt-md-0 mt-3">
+
+            <!-- Content -->
+            <h5 class="text-uppercase">Contato</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item list-group-item-action">
+                <i class="fas fa-envelope-square"></i> wouerner@codigodehonra.tech 
+              </li>
+              <li class="list-group-item list-group-item-action">
+                <i class="fab fa-telegram-plane"></i> @wouerner
+              </li>
+              <li class="list-group-item list-group-item-action ">
+                <i class="fas fa-phone-alt"></i> <i class="fab fa-whatsapp"></i> 61-99917-9736 (whatsapp)
+              </li>
+            </ul>
+          </div>
+          <!-- Grid column -->
+
+          <hr class="clearfix w-100 d-md-none pb-3">
+          <div class="col-md-3 mb-md-0 mb-3">
+          </div>
+          <div class="col-md-3 mb-md-0 mb-3">
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 mb-md-0 mb-3">
-      </div>
-    </div>
-  </div>
-  <div class="bg-dark footer-copyright text-center py-3">© 2019 : CodigoDeHonra.Tech</div>
-</footer>
-</body>
+      <div class=" footer-copyright text-center py-3">© 2019 CodigoDeHonra.Tech</div>
+    </footer>
+  </body>
 </html>
